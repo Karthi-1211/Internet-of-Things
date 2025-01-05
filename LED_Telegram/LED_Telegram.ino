@@ -1,31 +1,21 @@
-/*
-  Rui Santos
-  Complete project details at https://RandomNerdTutorials.com/telegram-control-esp32-esp8266-nodemcu-outputs/
-  
-  Project created using Brian Lough's Universal Telegram Bot Library: https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot
-  Example based on the Universal Arduino Telegram Bot Library: https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot/blob/master/examples/ESP8266/FlashLED/FlashLED.ino
-*/
-
 #ifdef ESP32
   #include <WiFi.h>
 #else
   #include <ESP8266WiFi.h>
 #endif
 #include <WiFiClientSecure.h>
-#include <UniversalTelegramBot.h>   // Universal Telegram Bot Library written by Brian Lough: https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot
+#include <UniversalTelegramBot.h>   
 #include <ArduinoJson.h>
 
 // Replace with your network credentials
-const char* ssid = "Balu";
-const char* password = "$AbK_001";
+const char* ssid = "";  //Wifi Name
+const char* password = "";  //
 
 // Initialize Telegram BOT
-#define BOTtoken "7151762366:AAGxeVcgLbSojLFSvGgz86YfKjKZUjyjA3Q"  // your Bot Token (Get from Botfather)
+#define BOTtoken ""  // your Bot Token (Get from Botfather)
 
-// Use @myidbot to find out the chat ID of an individual or a group
-// Also note that you need to click "start" on a bot before it can
-// message you
-#define CHAT_ID "1988835730"
+
+#define CHAT_ID "" //your chatId
 
 #ifdef ESP8266
   X509List cert(TELEGRAM_CERTIFICATE_ROOT);
