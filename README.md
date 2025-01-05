@@ -74,5 +74,5 @@ This project sends WhatsApp messages using the ESP8266 and the CallMeBot API. It
 
 ---
 
-##Usage
-Each project folder contains its own code, circuit diagram, and instructions. Navigate to the specific project folder for detailed usage instructions.
+## Usage
+- Each project folder contains its own code, circuit diagram, and instructions. Navigate to the specific project folder for detailed usage instructions.
