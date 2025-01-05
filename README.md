@@ -9,11 +9,7 @@ Welcome to my IoT Projects repository! This repository contains **10 projects** 
 2. [Projects List](#projects-list)
 3. [Technologies Used](#technologies-used)
 4. [Hardware Components](#hardware-components)
-5. [Setup and Installation](#setup-and-installation)
-6. [Usage](#usage)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact](#contact)
+5. [Usage](#usage)
 
 ---
 
@@ -77,3 +73,6 @@ This project sends WhatsApp messages using the ESP8266 and the CallMeBot API. It
 - TM1637 4-Digit 7-Segment Display
 
 ---
+
+##Usage
+Each project folder contains its own code, circuit diagram, and instructions. Navigate to the specific project folder for detailed usage instructions.
