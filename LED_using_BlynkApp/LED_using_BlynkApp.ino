@@ -1,11 +1,8 @@
-/*New blynk app project
-   Home Page
-*/
 
-#define BLYNK_TEMPLATE_ID "TMPL3AeBTHGpl"
-#define BLYNK_TEMPLATE_NAME "LED Using Blynk"
-#define BLYNK_AUTH_TOKEN "iWrXr6A_v2LNv9k2hSfr4Ly5vzjD_cfc"//Enter your blynk auth token
-
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_TEMPLATE_NAME ""
+#define BLYNK_AUTH_TOKEN ""  //Enter your blynk auth token
+ 
 
 //Include the library files
 #define BLYNK_PRINT Serial
@@ -14,8 +11,8 @@
 
 
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "Balu";//Enter your WIFI name
-char pass[] = "$AbK_001";//Enter your WIFI password
+char ssid[] = "";//Enter your WIFI name
+char pass[] = "";//Enter your WIFI password
 
 //Get the button value
 BLYNK_WRITE(V0) {
