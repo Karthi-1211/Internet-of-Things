@@ -2,9 +2,9 @@
 
  
 
-const char* ssid = "Redmi 7";    //  Your Wi-Fi Name
+const char* ssid = "";    //  Your Wi-Fi Name
 
-const char* password = "72e98794d376";   // Wi-Fi Password
+const char* password = "";   // Wi-Fi Password
 
  
 
