@@ -1,8 +1,3 @@
-/*
- * ESP8266 Servo Motor Control With Web Server 
- * https://circuits4you.com
- */
-
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <Servo.h>
@@ -13,8 +8,8 @@
 #define ServoPin 0   //D5 is GPIO14
 
 //WiFi Connection configuration
-const char *ssid = "Balu";
-const char *password = "$AbK_001";
+const char *ssid = "";  //wifi name
+const char *password = "";  //wifi password
 
 
 Servo myservo;  // create servo object to control a servo
