@@ -10,8 +10,8 @@
 #include <ArduinoOTA.h>
 
 // Replace with your network credentials
-const char* ssid = "Balu";
-const char* password = "$AbK_001";
+const char* ssid = "";  // Wifi name
+const char* password = ""; //Wifi Password
 
 const int ESP_BUILTIN_LED = 2;
 
