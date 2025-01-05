@@ -1,14 +1,3 @@
-/*
-  Rui Santos
-  Complete project details at:
-   - ESP32: https://RandomNerdTutorials.com/esp32-send-email-smtp-server-arduino-ide/
-   - ESP8266: https://RandomNerdTutorials.com/esp8266-nodemcu-send-email-smtp-server-arduino/
-  
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.
-  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-  Example adapted from: https://github.com/mobizt/ESP-Mail-Client
-*/
-
 #include <Arduino.h>
 #if defined(ESP32)
   #include <WiFi.h>
@@ -17,19 +6,19 @@
 #endif
 #include <ESP_Mail_Client.h>
 
-#define WIFI_SSID "Redmi 7"
-#define WIFI_PASSWORD "72e98794d376"
+#define WIFI_SSID ""  //wifi name
+#define WIFI_PASSWORD ""  //Wifi password
 
 /** The smtp host name e.g. smtp.gmail.com for GMail or smtp.office365.com for Outlook or smtp.mail.yahoo.com */
 #define SMTP_HOST "smtp.gmail.com"
 #define SMTP_PORT 465
 
 /* The sign in credentials */
-#define AUTHOR_EMAIL "anonymousriddle.001@gmail.com"
-#define AUTHOR_PASSWORD "zcna rnpn wxiu dkfn"
+#define AUTHOR_EMAIL ""   // author email
+#define AUTHOR_PASSWORD ""  //password
 
 /* Recipient's email*/
-#define RECIPIENT_EMAIL "balukarthi0210@gmail.com"
+#define RECIPIENT_EMAIL ""  //reciever email
 
 /* Declare the global used SMTPSession object for SMTP transport */
 SMTPSession smtp;
@@ -104,7 +93,7 @@ void setup(){
 
    
   //Send raw text message
-  String textMsg = "Hello World! - Sent from ESP board";
+  String textMsg = "Hii Karthik.....! - Sent from ESP board";
   message.text.content = textMsg.c_str();
   message.text.charSet = "us-ascii";
   message.text.transfer_encoding = Content_Transfer_Encoding::enc_7bit;
