@@ -1,25 +1,15 @@
-/* 
-  Rui Santos
-  Complete project details at https://RandomNerdTutorials.com/esp8266-nodemcu-send-messages-whatsapp/
-  
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files.
-  
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-*/
 
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <WiFiClient.h>
 #include <UrlEncode.h>
 
-const char* ssid = "Unknown";
-const char* password = "$AbK_001";
+const char* ssid = "";
+const char* password = "";
 
 // +international_country_code + phone number
 // Portugal +351, example: +351912345678
-String phoneNumber = "+919515607788";
+String phoneNumber = "";
 String apiKey = "REPLACE_WITH_API_KEY";
 
 void sendMessage(String message){
